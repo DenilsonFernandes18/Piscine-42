@@ -26,7 +26,7 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-int	is_valid_base(char *base)
+int	ft_is_valid_base(char *base)
 {
 	int	i;
 	int	j;
@@ -55,7 +55,7 @@ void	ft_putnbr_base(int nbr, char *base)
 	int	base_c;
 
 	base_c = ft_strlen(base);
-	if (!is_valid_base(base))
+	if (!ft_is_valid_base(base))
 		return ;
 	if (nbr < 0)
 	{
